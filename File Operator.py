@@ -9,10 +9,10 @@ class JournalManager:
     def add_entry(self, user_input):
         """Appends a new journal entry with a timestamp. Creates the file if it doesn't exist."""
         try:
-            # Generate current timestamp in the format shown in instructions: [YYYY-MM-DD HH:MM:SS]
+           
             timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
             
-            # Open file in append ('a') mode to add new entries at the end
+           
             with open(self.filename, 'a') as file:
                 file.write(f"{timestamp}\n{user_input}\n\n")
             print("\nEntry added successfully!")
@@ -22,7 +22,8 @@ class JournalManager:
             print(f"\nAn unexpected error occurred: {e}")
 
     def view_all_entries(self):
-        """Displays all entries from the journal file. Gracefully handles missing files."""
+
+        
         if not os.path.exists(self.filename):
             print("\nError: The journal file does not exist. Please add a new entry first.")
             return
@@ -44,14 +45,14 @@ class JournalManager:
             print(f"\nAn unexpected error occurred: {e}")
 
     def search_entry(self, keyword):
-        """Searches for a specific keyword or date and displays matching paragraphs/entries."""
+       
         if not os.path.exists(self.filename):
             print("\nError: The journal file does not exist. Please add a new entry first.")
             return
 
         try:
             with open(self.filename, 'r') as file:
-                # Entries are separated by double newlines ('\n\n')
+               
                 content = file.read()
                 entries = content.strip().split('\n\n')
             
@@ -65,7 +66,7 @@ class JournalManager:
                 print("---------------------------------------")
                 for match in matching_entries:
                     print(match)
-                    print() # print empty line between matches
+                    print() 
             else:
                 print(f"\nNo entries were found for the keyword: {keyword}")
         except Exception as e:
@@ -91,11 +92,12 @@ class JournalManager:
 
 
 def main():
-    # Instantiate the JournalManager object
+   
     manager = JournalManager()
 
     while True:
-        # Displaying the exact menu structure required
+
+        
         print("\n === Welcome to Personal Journal Manager! === ")
         print(" --> Please select an option:\n")
         print("1. Add a New Entry")
