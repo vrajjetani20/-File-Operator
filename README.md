@@ -17,24 +17,28 @@ program
 ## 🖥️ Screenshots
 
 ### 1. Add Entry
+<img width="886" height="347" alt="1" src="https://github.com/user-attachments/assets/1b28cfc5-a736-4488-861c-d2af80b9d856" />
 
-![Add Entry](1(3).png)
 
 ### 2. View Entries
 
-![View](2(3).png)
+<img width="892" height="347" alt="2" src="https://github.com/user-attachments/assets/29830f36-fb67-4af2-bd1e-ad1cfaadbc70" />
+
 
 ### 3. Search Entry
 
-![Search](3(3).png)
+<img width="887" height="395" alt="3" src="https://github.com/user-attachments/assets/ae924aad-cee3-40ba-a70e-37d534eeceb2" />
+
 
 ### 4. Delete Entries
 
-![Delete](4(3).png)
+<img width="890" height="572" alt="4" src="https://github.com/user-attachments/assets/e1e1e452-6533-4b16-8175-059b049edd89" />
+
 
 ### 5. Exit
 
-![Exit](5(3).png)
+<img width="900" height="332" alt="5" src="https://github.com/user-attachments/assets/fbae6289-cb33-4543-8c1e-aef3cc994415" />
+
 
 ## ▶️ How to Run
 
